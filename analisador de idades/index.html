@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Analisador de Números</title>
+</head>
+<body>
+    <header>
+        <div>
+        
+        </div>
+    </header>
+    <main>
+        <h1><em>Analisador de Números</em></h1>
+        <section>
+                <p id="txtan">Ano de nascimento:</p>
+                    <input type="number" name="nasc" id="nasc" min="1900" max="2022"><br><br>
+                <label>Sexo:</label>
+                    <input type="radio" name="radsex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                    <input id="btn" type="button" value="Verificar" onclick="verificar()">
+            <div id="result">
+                <img id="imgf">
+                <p style="text-align: center;">[Preencha todos os campos acima !]</p>
+            </div>                 
+        </section>
+    </main>
+    <footer>
+        <p>&Omega;michelangelo.sk</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>

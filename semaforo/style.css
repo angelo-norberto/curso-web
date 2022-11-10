@@ -1,0 +1,10 @@
+    #semaforo{
+        position: relative;
+        left: 550px;
+        top: 20px;
+    }
+    .container{
+        position: relative;
+        top: 40px;
+        left: 495px;
+    }

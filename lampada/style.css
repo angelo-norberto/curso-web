@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+.container{
+    position: relative;
+    left: 612px; 
+    
+}
+.container > #btnligar{
+    border: none;
+    background-color: #00ff0d;
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+}
+.container > #btndesligar{
+    border: none;
+    color: white;
+    background-color: #ff1c1c;
+    padding: 7px;
+    border-radius: 7px;
+}
+img{
+    position: relative;
+    left: 590px;
+}
