@@ -1,2 +1,2 @@
 # curso-web
- Aqui estão meus exercicios relacionados á introdução ao desenvolvimento web.
+ Aqui estão meus exercicios relacionados à introdução ao desenvolvimento web.
