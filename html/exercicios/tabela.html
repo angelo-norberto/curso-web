@@ -1,0 +1,60 @@
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    thead tr {
+        border-bottom: 2px solid rgb(40, 40, 40);
+    }
+
+    tbody tr:hover {
+        background-color: #dedede;
+    }
+
+    tfoot {
+        background-color: #444;
+        color: #ffffff;
+        font-weight: bold;
+    }
+</style>
+
+<h1>Tabelas</h1>
+
+<table border="1">
+    <caption>Produtos</caption>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preco</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iPad</td>
+            <td>3232</td>
+            <td>3</td>
+            <td>10239</td>
+        </tr>   
+        <tr>
+            <td>Samsung s9</td>
+            <td>3224</td>
+            <td>4</td>
+            <td>12456</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td rowspan="2" colspan="3">Total</td>
+            <td>32341</td>
+        </tr>
+        <tr>
+            <td>teste</td>
+        </tr>
+    </tfoot>
+</table>

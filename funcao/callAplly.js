@@ -12,7 +12,7 @@ const produto = {
 global.preco = 20
 global.desc = 0.1  
 
-console.log(getPreco())
+console.log(getPreco()) // variaveis sem atribuição do this, sendo assim o escopo local 
 console.log(produto.getPreco())
 
 const carro = {preco: 23000, desc:0.20}
@@ -20,5 +20,5 @@ console.log(getPreco.call(carro))
 console.log(getPreco.apply(carro))
 
 console.log(getPreco.call(carro, 0.17, '$'))
-onsole.log(getPreco.apply(carro, [0.17, '$']))
+console.log(getPreco.apply(carro, [0.17, '$']))
 

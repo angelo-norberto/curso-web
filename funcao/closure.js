@@ -7,7 +7,7 @@ const x = 'global'
 
 function fora() { 
     const x = 'local'
-    function dentro() {
+    function dentro() {   // closure
         return x 
     }
     return dentro 

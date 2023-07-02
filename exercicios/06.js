@@ -1,7 +1,7 @@
 function jurosSimples (capitalInicial, taxaDeJuros, tempAplicacao) {
     const montante = (capitalInicial * taxaDeJuros * tempAplicacao)
     console.log(`Resultado de juros simples: ${montante}`)
-}
+} 
 
 function jurosCompostos (capitalInicial, taxaDeJuros, tempAplicacao) {
     const montante = capitalInicial * (1 + taxaDeJuros) ** tempAplicacao

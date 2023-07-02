@@ -1,8 +1,8 @@
 const fabricantes = ['mercedes', 'ferrari', 'BMW']
 
 function imprimir(nome, indice){
-    console.log(`${indice + 1}. ${nome}`)
+    console.log(`${indice}. ${nome}`)
 }
 
 fabricantes.forEach(imprimir)  
-fabricantes.forEach(fabricantes => console.log(fabricantes)) 
+fabricantes.forEach(fabricante => console.log(fabricante)) 

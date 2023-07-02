@@ -3,7 +3,8 @@
 const saudacao = 'opa' //contexto léxico 1 
 
 function exec () {
-    const saudacao = 'falaa' //contexto léxico 2   
+    const saudacao = 'falaa' //contexto léxico 2
+    return saudacao
 }
 
 // objetos são grupos aninhados de pares nomes/valor

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+    <title>Document</title>
+
+    <style>
+        span {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Projeto</h1>
+<ul class="tree">
+    <li><span wm-folder>backend</span>
+        <ul>
+            <li>
+                <span wm-folder>app</span>  
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>vendo.js</li>
+                </ul>
+            </li>
+            <li>
+   </li>
+                <span wm-folder>config</span>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                </ul>
+            </li>
+        </ul>
+    <li>
+        <span wm-folder>frontend</span>
+        <ul>
+            <li>
+                <span wm-folder>public</span>
+                <ul>
+                    <li>app.css</li>
+                </ul>
+            </li>
+        </ul>
+    </li>  
+</ul>
+
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.addEventListener('click', event => {
+            const ul = folder.nextElementSibling
+            const actualDisplay = ul.style.display
+            ul.style.display = actualDisplay === 'none' ? 'block' : 'none'
+        })
+    })
+</script>
+</body>
+</html>

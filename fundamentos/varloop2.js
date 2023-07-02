@@ -6,5 +6,5 @@ for (var i = 0; i < 10; i++){
     })
 }
 
-funcs[2]()
+funcs[0]()
 funcs[8]()

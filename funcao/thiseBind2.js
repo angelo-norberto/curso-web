@@ -5,7 +5,7 @@ function pessoa() {
     setInterval(function(){
         self.idade++
         console.log(self.idade)
-    }/*.bind(this)*/, 1000)
+    }/*.bind(this)*/, 100)
 }
 
 new pessoa 

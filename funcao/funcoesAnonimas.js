@@ -1,26 +1,24 @@
-const soma = function (x, y){
-    return x + y 
+const soma = function (x, y) {
+    return x + y
 }
 
-const imprimirResult = function (a, b, operacao = soma){
-    console.log(operacao(a,b))
+const imprimirResultado = function (a, b, operacao = soma) {
+    console.log(operacao(a, b))
 }
 
-imprimirResult(3, 4)
-imprimirResult(3, 4, soma)
-imprimirResult(3, 4, function (x, y){
+imprimirResultado(3, 4)
+imprimirResultado(3, 4, soma)
+imprimirResultado(3, 4, (x, y) => { // arrow function é sempre uma função anonima  
     return x - y
 })
-imprimirResult(3, 4, (x, y) => x * y)
+imprimirResultado(3, 4, (x, y) => x * y) // retorno implicito
 
 const pessoa = {
-    falar: function (){
-        console.log('opa')
-    },
-    bairro(){
-        console.log('meu bairro é o violin')
+    saudacao: 'Opa',
+    //falar() tambem é valido
+    falar: function() {
+        console.log(this.saudacao)
     }
 }
 
-pessoa.falar()
-pessoa.bairro()
+pessoa.falar()  

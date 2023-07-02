@@ -1,0 +1,64 @@
+<video id="meu-video" width="800px" height="450" controlsList="nodownload">
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+    seu browser nao suporta a tag video
+</video>
+
+<div wm-progresso="meu-video" class="progresso">
+    <div id="barra-progresso"></div>
+</div>
+
+<div>
+    <img src="play.png" wm-play="meu-video" width="20px" id="btn-play-pause">
+</div>
+<script>
+    const btnPlayPause = document.querySelector('[wm-play]')
+    const barraProgresso = document.querySelector('#barra-progresso')
+    const meuVideo = document.querySelector('#meu-video')    
+
+    const pausePlay = setInterval(function() {
+        if (meuVideo.paused) {
+            btnPlayPause.addEventListener('click', () => {
+            btnPlayPause.src= "pause.png"
+            meuVideo.play()
+
+            meuVideo.addEventListener("timeupdate", () => {
+            let progresso = meuVideo.currentTime / meuVideo.duration
+            barraProgresso.style.width = progresso * 100 + "%"
+    })  
+        })
+        } else {
+            btnPlayPause.addEventListener('click', () => {
+            btnPlayPause.src = "play.png"
+            meuVideo.pause()
+        })  
+        }
+      }, 300)
+    
+    pausePlay()
+
+</script>
+
+<style>
+    .progresso {
+        height: 10px;
+        width: 770px;
+        background-color: #dedede;
+        margin-top: 11px;
+        position: absolute;
+        margin-left: 30px;
+    }
+
+    .progresso > div {
+        background-color: rgb(159, 56, 255);
+        color: #ffffff;
+        height: 100%;
+        text-align: right;
+        font-size: 14px;
+        width: 0%;
+    }
+
+    #btn-play-pause {
+        width: 20px;
+        margin-top: 5px;
+    }
+</style>

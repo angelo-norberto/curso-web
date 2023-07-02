@@ -20,4 +20,4 @@ function avaliaPontuacoes (stringsPontuacoes) {
     return [qtdQuebraDeRecords, piorJogo]
 }
  
-console.log(avaliaPontuacoes(stringPontuacoes))
+console.log(avaliaPontuacoes(stringsPontuacoes))

@@ -1,15 +1,13 @@
-function area ( lado1, lado2, lado3) { 
-    if (lado1 == lado2 && lado2 == lado3){
-        return 'Equilátero'
-    } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
-        return 'Isósceles'
+function classificaTriangulo(lado1, lado2, lado3) {
+    if(lado1 == lado2 == lado3) {
+        console.log('Triangulo equilatero')
+    } else if(lado1 == lado2 || lado2 == lado3 || lado1 == lado3) {
+        console.log('Triangulo isosceles')
     } else {
-        return 'Escaleno'
+        console.log('Triangulo escaleno')
     }
-
 }
 
-console.log(area(66, 66, 66))
-console.log(area(23, 66, 66))
-console.log(area(23, 66, 60))
-
+classificaTriangulo(2, 2, 2)
+classificaTriangulo(2, 3, 3)
+classificaTriangulo(2, 3, 4)

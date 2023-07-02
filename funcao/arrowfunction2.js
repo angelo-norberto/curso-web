@@ -1,4 +1,4 @@
- function pessao() {
+ function pessoa() {
     this.idade = 0
     
     setInterval (() =>{
